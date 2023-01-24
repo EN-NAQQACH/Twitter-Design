@@ -16,14 +16,20 @@ header{
     width: 29%;
     height: 100%;
     position: fixed;
-    height: 90vh;
+    height: 100vh;
+}
+/**/.lenq{
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+    padding-top: 10px;
 }
 .logo {
 color: white;
-font-weight: 600;
+font-weight: 800;
 font-size: 2rem;
-margin-left:5px;
-padding-top: 15px;
+margin-left:-2px;
+margin-top: -5px;
 }
 .navlist{
 margin-top: 15px;
@@ -39,11 +45,17 @@ align-items: center;
 list-style: none;
 text-decoration: none;
 color: white;
-font-size: 2rem;
+font-size: 1.3rem;
 width: fit-content;
 border: solid 1px transparent;
 padding: 1px 5px 1px 5px;
 transition: ease 0.2s;
+font-weight: 700;
+}
+.navlist li .explore{
+    background-color:rgb(47, 51, 54);
+    border: solid 1px transparent;
+    border-radius: 15px;
 }
 .navlist li a span {
     padding-left: 10px;
@@ -57,15 +69,17 @@ transition: ease 0.2s;
 .btn {
     color: white;
     background-color: rgb(29, 155, 240);
-    width: 55%;
-    height: 70px;
+    width: 62%;
+    height: 50px;
+    border: 1px solid transparent;
     border-radius: 30px;
     margin-top: 15px;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    transition: ease 0.3s;
-    padding: 15px 0;
+    transition: 0.3s;
+  
+ 
 }
 .btn:hover {
     background-color: rgb(29, 155, 240,0.8);
@@ -73,8 +87,9 @@ transition: ease 0.2s;
 
 .main {
     width: 100%;
-    height: 33px;
-    padding-top: 120px;
+    height: 20px;
+    padding-top: 70px;
+    
 }
 .main a{
     display: flex;
@@ -84,9 +99,9 @@ transition: ease 0.2s;
     font-size: 1.3rem;  
     border: solid 1px transparent;
     width: fit-content;
-    padding: 10px 5px;
+    padding: 3px 5px;
     border-radius: 30px;
-     transition: ease 0.8s;
+    transition: ease 0.8s;
 }
 .main a:hover{
   background-color:rgb(47, 51, 54);
@@ -107,4 +122,259 @@ img {
 }
 .account-details .s2{
     color: gray;
+}
+
+
+main {
+    margin-left: 29%;
+    width: 71%;
+    height: 100%;
+}
+.super-main {
+    width: 100%;
+    display: flex;
+}
+.main-feed {
+    width: 50%;
+    border-left: solid 1px rgb(47, 51, 54);
+    border-right: solid 1px rgb(47, 51, 54);
+}
+
+.super-main .home-bar {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  /**/  padding:15px 15px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 55px;
+}
+.new-twitt{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 4px 18px;
+}
+.new-twitt-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+}
+
+.new-twitt-actions{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60%;
+width: 100%;
+}
+.new-twitt-actions ul{
+    list-style: none;
+    display: flex;
+}
+.new-twitt-details input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 24px;
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: black;
+    margin-top: -6px;
+    letter-spacing: 1px;
+    /**/margin-left: 5px;
+    
+}
+.new-twitt-actions ul li {
+margin-right: 15px;
+cursor: pointer;
+color:  rgb(29, 155, 240,0.8);
+}
+.new-twitt-actions ul li i {
+    font-size: 2rem;
+}
+.new-twitt-actions .btn {
+    width: 25%;
+    margin: 0;
+    height: 35px;
+}
+.feed-tweet {
+    width: 100%;
+    display: flex;
+    padding: 12px 15px;
+    color: white;
+    border-top: 1px solid rgb(47, 51, 54);
+    min-height: 100px;
+    margin-bottom: -10px;
+}
+.feed-twet-details{
+   display: flex;
+   flex-direction:column;
+   width: 100%;
+   margin-left: 12px;
+}
+.twetter-info{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.twetter-info a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+}
+.twetter-info a span{
+    color: gray;
+    font-size: 1.1rem;
+}
+.twett-icons{
+    display: flex;
+    justify-content: space-between;
+    margin:15px 0;
+    padding-right: 50px;
+
+}
+.twett-icons i 
+{
+font-size: medium;
+cursor: pointer;
+
+}
+.par{
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+.side-feed{
+    width: 50%;
+    padding: 0 2%;
+}
+.side-feed .search{
+    display: flex;
+    height: 55px;
+    max-width: 335px;
+    position: sticky;
+    top:0px;
+    padding-top: 8px;
+    background-color: black;
+}
+
+.search input {
+    background-color: #212327;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    font-weight: 600;  
+}
+.Trending{
+    background-color:#212327;
+    height: 600px;
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    border-radius: 15px;
+
+}
+h1 {
+    padding: 14px 15px;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: 90px;
+    padding: 0px 15px;
+    margin-top: -5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:gray ;
+   
+}
+.content:hover , .see-more:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+}
+.content > span:not(:last-child) {
+    font-weight: 800;
+    color: white;
+    font-size: 1.5rm;
+}
+.twitt-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.see-more{
+    text-decoration: none;
+    padding:12px 15px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color:rgb(29, 155, 240,0.8) ;
+    border-bottom: 1px solid transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.follow{
+    background-color:#212327;
+    height: 300px;
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    border-radius: 15px;
+}
+.follow-prof{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0px 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.follow-prof:hover{
+    background-color: #1c1e22;
+}
+.text-follow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: -20px;
+}
+.text-follow a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+.text-follow span{
+    color:gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.follow-prof .btn{
+    width: 75px;
+    margin: 0;
+    height: 30px;
+    color: black;
+    background-color: white;
 }
